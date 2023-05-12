@@ -1,9 +1,8 @@
+
+import './progress.css';
+
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
-
-const lengthInput = document.querySelector('#lengthInput');
-const startButton = document.querySelector('#startButton');
-const hideButton = document.querySelector('#hideButton');
 
 const centerX = canvas.width / 2;
 const centerY = canvas.height / 2;
@@ -65,7 +64,7 @@ const hideProgress = () => {
   }
 }
 
-export const options = {
+export const progressOptions = {
   drawCircle,
   startProgress,
   hideProgress,
