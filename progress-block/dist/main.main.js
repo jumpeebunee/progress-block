@@ -176,7 +176,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_normolize_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/normolize.css */ \"./src/styles/normolize.css\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ \"./src/styles/style.css\");\n/* harmony import */ var _options_options__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./options/options */ \"./src/options/options.js\");\n\r\n\r\n\r\n\r\n\r\n(0,_options_options__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n\n//# sourceURL=webpack://progress-block/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_normolize_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/normolize.css */ \"./src/styles/normolize.css\");\n/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles/style.css */ \"./src/styles/style.css\");\n/* harmony import */ var _options_options__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./options/options */ \"./src/options/options.js\");\n\r\n\r\n\r\n\r\ndocument.addEventListener(\"DOMContentLoaded\", () => (0,_options_options__WEBPACK_IMPORTED_MODULE_2__[\"default\"])());\n\n//# sourceURL=webpack://progress-block/./src/index.js?");
 
 /***/ }),
 

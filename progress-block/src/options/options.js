@@ -15,14 +15,12 @@ export default function init() {
     clearTimeout(t);
     if (lengthInput.value > 100) {
       lengthInput.value = 100;
-      t = setTimeout(() => {
-        progressOptions.drawCircle(100);
-      }, 400);
-    } else {
-      t = setTimeout(() => {
-        progressOptions.drawCircle(lengthInput.value);
-      }, 400);
-    }
+    } else if (lengthInput.value < 0) {
+      lengthInput.value = 0;
+    } 
+    t = setTimeout(() => {
+      progressOptions.drawCircle(lengthInput.value);
+    }, 400);
   });
 
   progressOptions.drawCircle(lengthInput.value);
