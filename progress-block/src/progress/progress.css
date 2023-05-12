@@ -1,0 +1,14 @@
+.progress-wrapper {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress {
+  opacity: 1px;
+  transition: opacity .4s ease;
+}
+
+.progress_hide {
+  opacity: 0;
+}
