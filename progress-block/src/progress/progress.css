@@ -12,3 +12,11 @@
 .progress_hide {
   opacity: 0;
 }
+
+
+@media (max-width: 362px) {
+  .progress {
+    width: 55.25vw;
+    height: 55.25vw;
+  }
+}

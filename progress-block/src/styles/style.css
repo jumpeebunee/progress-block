@@ -27,3 +27,12 @@ body {
     height: 568px;
   }
 }
+
+@media (max-width: 362px) {
+  .app {
+    padding-top: 13.81vw;
+    padding-bottom: 13.81vw;
+    justify-content: center;
+    gap: 8.29vw;
+  }
+}
