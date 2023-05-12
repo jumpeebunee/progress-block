@@ -19,9 +19,9 @@ export default function init() {
       lengthInput.value = 0;
     } 
     t = setTimeout(() => {
-      progressOptions.drawCircle(lengthInput.value);
+      progressOptions.draw(lengthInput.value);
     }, 400);
   });
 
-  progressOptions.drawCircle(lengthInput.value);
+  progressOptions.draw(lengthInput.value);
 }

@@ -14,7 +14,11 @@ let isRotating = false;
 let isHide = false;
 let animationFrameId;
 
-const drawCircle = (percentage) => {
+let start = 0;
+let end = 0;
+let to;
+
+const drawCircle = () => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
   ctx.beginPath();
@@ -23,11 +27,29 @@ const drawCircle = (percentage) => {
   ctx.lineWidth = 14;
   ctx.stroke();
 
+  if (to === 'up' && start < end) {
+    start += 1;
+  } else if ( start > end){
+    start -= 1;
+  }
+
   ctx.beginPath();
-  ctx.arc(centerX, centerY, radius, -Math.PI / 2, (-Math.PI / 2) + ((2 * Math.PI) * (percentage / 100)));
+  ctx.arc(centerX, centerY, radius, -Math.PI / 2, (-Math.PI / 2) + ((2 * Math.PI) * (start / 100)));
   ctx.strokeStyle = '#005BFF';
   ctx.lineWidth = 14;
   ctx.stroke();
+
+  if (to === 'up') {
+    if (start < end) {
+      requestAnimationFrame(drawCircle);
+    }
+  } else if (to === 'down') {
+    if (start > end) {
+      requestAnimationFrame(drawCircle);
+    }
+  } else {
+    cancelAnimationFrame(drawCircle);
+  }
 }
 
 const moveProgress = () => {
@@ -64,8 +86,15 @@ const hideProgress = () => {
   }
 }
 
+const draw = (percentage) => {
+  to = (end < percentage) ? 'up' : 'down';
+  end = Math.floor(+percentage);
+  drawCircle();
+}
+
 export const progressOptions = {
   drawCircle,
   startProgress,
   hideProgress,
+  draw,
 }
