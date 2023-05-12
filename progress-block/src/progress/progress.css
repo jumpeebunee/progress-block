@@ -1,0 +1,22 @@
+.progress-wrapper {  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress {
+  opacity: 1px;
+  transition: opacity .4s ease;
+}
+
+.progress_hide {
+  opacity: 0;
+}
+
+
+@media (max-width: 362px) {
+  .progress {
+    width: 55.25vw;
+    height: 55.25vw;
+  }
+}

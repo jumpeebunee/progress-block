@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+label {
+  font-size: 16px;
+  line-height: 19px;
+  font-family: Inter;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.options__content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input {
+  width: 60px;
+  height: 32px;
+  text-align: center;
+  border-radius: 20px;
+  border: solid 1px black;
+  font-size: 16px;
+}
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 60px;
+  height: 32px;
+  border-radius: 20px;
+  background-color: #E0E6EF;
+  border: none;
+  position: relative;
+  padding: 0 4px;
+}
+
+.toggle-btn_active {
+  justify-content: flex-end;
+  background-color: #005BFF;
+}
+
+.toggle-btn__icon {
+  width: 24px;
+  height: 24px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+@media (max-width: 362px) {
+
+  label {
+    font-size: 4.42vw;
+    line-height: 5.25vw;
+  }  
+
+  .options__content {
+    gap: 4.14vw;
+  }
+  
+  .input {
+    width: 16.57vw;
+    height: 8.84vw;
+    font-size: 4.42vw;
+    border-radius: 5.52vw;
+    border: solid 0.28vw black;
+  }
+  
+  .input-wrapper {
+    gap: 5.52vw;
+  }
+  
+  .toggle-btn {
+    width: 16.57vw;
+    height: 8.84vw;
+    border-radius: 5.52vw;
+    padding: 0 1.10vw;
+  }
+  
+  .toggle-btn__icon {
+    width: 6.63vw;
+    height: 6.63vw;
+  }  
+}
